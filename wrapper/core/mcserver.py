@@ -200,7 +200,7 @@ class MCServer(object):
 
             # stuff I was trying to get colorized output to come through
             # for non-vanilla servers.
-            command = '-fdiagnostics-color=always'
+            command = '2>&1'
             self.args.append(command)
             command2 = self.args
             # print("args:\n%s\n" % command2)
