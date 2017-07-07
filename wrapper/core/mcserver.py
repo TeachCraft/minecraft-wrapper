@@ -777,6 +777,7 @@ class MCServer(object):
                 getargs(line_words, 0)[0:getargs(line_words, 0).find("[")])
             eid = get_int(getargs(line_words, 6))
             locationtext = getargs(buff.split(" ("), 1)[:-1].split(", ")
+            locationtext[0] = locationtext[0].replace("[world]", "")
             location = get_int(
                 float(locationtext[0])), get_int(
                 float(locationtext[1])), get_int(
